@@ -33,6 +33,7 @@
             :class="`${rootClass}__img`"
           />
 
+          <h2 :for="dataImage.id" v-if="useLabel" :class="`${rootClass}__lbl`">{{dataImage.alt}}</h2>
           <label :for="dataImage.id" v-if="useLabel" :class="`${rootClass}__lbl`">{{dataImage.alt}}</label>
         </div>
       </li>
